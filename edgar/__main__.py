@@ -5,7 +5,7 @@ import sys
 from argparse import ArgumentParser
 import logging
 
-import edgar
+from edgar.main import download_index
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
@@ -69,5 +69,5 @@ if __name__ == "__main__":
         
     logger.debug("downloads will be saved to %s" % args.directory)
 
-    edgar.download_index(args.directory, args.year, args.ua, args.skip)
+    download_index(args.directory, args.year, args.ua, args.skip)
     logger.info("Files downloaded in %s" % args.directory)
