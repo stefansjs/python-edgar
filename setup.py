@@ -14,7 +14,6 @@ setup(
     author_email="edouard.swiac@gmail.com",
     url="https://github.com/edouardswiac/python-edgar",
     packages=["edgar"],
-    scripts=["run.py"],
     license="MIT",
     keywords="edgar sec filings 10k 10q 13d 8k",
     classifiers=[
